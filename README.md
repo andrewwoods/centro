@@ -20,7 +20,7 @@ The current version is 0.1.0. This project uses [semantic versioning](http://sem
 
 ## Ideas for sections/pages
 
-* Feature Roadmap
+* [Feature Roadmap](docs/roadmap.md)
 * Language Translations 
 * Frequently Asked Questions (FAQ)
 * Screenshots
