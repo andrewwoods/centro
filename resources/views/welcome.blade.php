@@ -10,11 +10,12 @@
         <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700&display=swap" rel="stylesheet">
 
         <!-- Styles -->
+        <link rel="stylesheet" href="/css/app.css">
     </head>
     <body class="antialiased">
-        <div class="relative flex items-top justify-center min-h-screen bg-gray-100 dark:bg-gray-900 sm:items-center sm:pt-0">
+        <div class="">
             @if (Route::has('login'))
-                <div class="hidden fixed top-0 right-0 px-6 py-4 sm:block">
+                <div class="">
                     @auth
                         <a href="{{ url('/home') }}" class="text-sm text-gray-700 underline">Home</a>
                     @else
@@ -27,24 +28,22 @@
                 </div>
             @endif
 
-            <div class="max-w-6xl mx-auto sm:px-6 lg:px-8">
-                <div class="flex justify-center pt-8 sm:justify-start sm:pt-0">
-                    <h1>Centro</h1>
+            <div class="main-wrapper center-center">
+                <main class="content text-left">
+                    <h1 class="text-center">Centro</h1>
                     <p>This is the personal hub of firstname lastname.
                         While only the owner can sign in and make changes,
                         you may subscribe to receive their content updates!
                         Consider installing Centro on your own web host,
                         to create your own personal hub.
                     </p>
-                </div>
+                </main>
+            </div>
 
-
-                <div class="flex justify-center mt-4 sm:items-center sm:justify-between">
-
-                    <div class="ml-4 text-center text-sm text-gray-500 sm:text-right sm:ml-0">
-                        Laravel v{{ Illuminate\Foundation\Application::VERSION }} (PHP v{{ PHP_VERSION }})
-                    </div>
-                </div>
+            <div class="footer-wrapper">
+                <p class="text-center">
+                    Laravel v{{ Illuminate\Foundation\Application::VERSION }} (PHP v{{ PHP_VERSION }})
+                </p>
             </div>
         </div>
     </body>
