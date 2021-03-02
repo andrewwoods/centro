@@ -12,7 +12,7 @@
         <!-- Styles -->
         <link rel="stylesheet" href="/css/app.css">
     </head>
-    <body class="antialiased">
+    <body class="center-center">
         <div class="">
             @if (Route::has('login'))
                 <div class="">
@@ -28,7 +28,7 @@
                 </div>
             @endif
 
-            <div class="main-wrapper center-center">
+            <div class="main-wrapper">
                 <main class="content text-left">
                     <h1 class="text-center">Centro</h1>
                     <p>This is the personal hub of firstname lastname.
