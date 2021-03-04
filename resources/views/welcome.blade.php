@@ -37,6 +37,24 @@
                         Consider installing Centro on your own web host,
                         to create your own personal hub.
                     </p>
+                    <h2>Follow a Site</h2>
+                    <form method="post" action="{{ url('follow') }}">
+                        <div class="field">
+                            <label for="url">URL</label>
+                            <input type="url" name="url" id="url">
+                        </div>
+                        <div class="field">
+                            <label for="site-name">Name</label>
+                            <input type="text" name="name" id="site-name">
+                        </div>
+                        <div class="field">
+                            <label for="site-description">Description</label>
+                            <input type="text" name="description" id="site-description">
+                        </div>
+                        <div class="buttons">
+                            <input type="submit" name="btn_submit" value="Follow Site">
+                        </div>
+                    </form>
                 </main>
             </div>
 
